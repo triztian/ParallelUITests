@@ -98,34 +98,47 @@
             </objects>
             <point key="canvasLocation" x="-91.304347826086968" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Car Details View Controller-->
         <scene sceneID="GO3-7g-i04">
             <objects>
-                <viewController id="X7W-ES-KqA" sceneMemberID="viewController">
+                <viewController id="X7W-ES-KqA" customClass="CarDetailsViewController" customModule="ParallelUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="99K-w7-gDa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qEq-Po-bTN">
-                                <rect key="frame" x="95" y="105" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qEq-Po-bTN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="GDP-QF-3fu"/>
+                                </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-IM-ViU">
-                                <rect key="frame" x="87" y="368" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-IM-ViU">
+                                <rect key="frame" x="20" y="244" width="374" height="518"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-jw-WND">
-                                <rect key="frame" x="184" y="802" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-jw-WND">
+                                <rect key="frame" x="159" y="778" width="96" height="30"/>
+                                <state key="normal" title="Contact seller"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VYb-jw-WND" firstAttribute="centerX" secondItem="99K-w7-gDa" secondAttribute="centerX" id="0Fv-Au-A7F"/>
+                            <constraint firstItem="Eg3-IM-ViU" firstAttribute="leading" secondItem="NsA-E9-wfb" secondAttribute="leading" constant="20" id="5Hk-hH-s9H"/>
+                            <constraint firstItem="VYb-jw-WND" firstAttribute="top" secondItem="Eg3-IM-ViU" secondAttribute="bottom" constant="16" id="R70-Ss-YJE"/>
+                            <constraint firstItem="qEq-Po-bTN" firstAttribute="top" secondItem="NsA-E9-wfb" secondAttribute="top" id="Rjd-ia-TeY"/>
+                            <constraint firstItem="NsA-E9-wfb" firstAttribute="trailing" secondItem="Eg3-IM-ViU" secondAttribute="trailing" constant="20" id="Tke-IA-RGg"/>
+                            <constraint firstAttribute="bottom" secondItem="VYb-jw-WND" secondAttribute="bottom" constant="34" id="ac8-qz-R73"/>
+                            <constraint firstItem="NsA-E9-wfb" firstAttribute="trailing" secondItem="qEq-Po-bTN" secondAttribute="trailing" id="dem-hg-ONQ"/>
+                            <constraint firstItem="Eg3-IM-ViU" firstAttribute="top" secondItem="qEq-Po-bTN" secondAttribute="bottom" constant="24" id="qeM-ac-oGa"/>
+                            <constraint firstItem="qEq-Po-bTN" firstAttribute="leading" secondItem="NsA-E9-wfb" secondAttribute="leading" id="vRE-uo-iqc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NsA-E9-wfb"/>
                     </view>
+                    <connections>
+                        <outlet property="pictureImage" destination="qEq-Po-bTN" id="cS1-bJ-XIC"/>
+                        <outlet property="specsTable" destination="Eg3-IM-ViU" id="iHc-kq-9vY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5T-px-gFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,6 +167,22 @@
                     <view key="view" contentMode="scaleToFill" id="8j7-64-gSm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-gz-eC9">
+                                <rect key="frame" x="131" y="131" width="110" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-XV-9gK">
+                                <rect key="frame" x="309" y="813" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-WU-4ns">
+                                <rect key="frame" x="58" y="813" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ep1-SV-vVZ"/>
                     </view>

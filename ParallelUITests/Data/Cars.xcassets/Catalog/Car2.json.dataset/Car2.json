@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "name": "Audi R8",
+    "description": "",
+    "image_asset_name": "Car2",
+    "price": 190000,
+    "specifications": {
+        "engine": {
+            "capacity": "3,994cc",
+            "type": "V10, 5.2L",
+            "technology": "Seven-speed dual-clutch automatic"
+        },
+        "body": {
+            "trim": "V10 quattro",
+            "color": "Pearl"
+        }
+    }
+}

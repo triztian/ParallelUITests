@@ -13,6 +13,8 @@ class CarListViewController: UIViewController {
     
     lazy var carRepository = LocalCarRepository()
     var cars = [Car]()
+    
+    var selectedCar: Car?
 
     override func loadView() {
         super.loadView()
@@ -31,6 +33,13 @@ class CarListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Cars for sale"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsController = segue.destination as? CarDetailsViewController else { return }
+        guard let cellSender = sender as? UIView else { return }
+        detailsController.car = cars[cellSender.tag]
     }
 }
 
@@ -42,17 +51,16 @@ extension CarListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCollectionCell", for: indexPath)
             as! CarCollectionCell
-        cell.pictureImage.image = UIImage(named: cars[indexPath.row].imageAssetName ?? "")
-        cell.nameLabel.text = cars[indexPath.row].name
-        let currencyFormatter = NumberFormatter()
-        currencyFormatter.numberStyle = .currency
-        currencyFormatter.currencyCode = "USD"
-        currencyFormatter.currencySymbol = "$"
-        currencyFormatter.decimalSeparator = "."
-        currencyFormatter.currencyGroupingSeparator = ","
-        currencyFormatter.groupingSize = 3
-        
-        cell.priceLabel.text = currencyFormatter.string(from: NSNumber(value: cars[indexPath.row].price))
+        let carIndex = indexPath.row
+        print("Row, Section", indexPath.row, indexPath.section)
+
+        cell.tag = carIndex
+        cell.pictureImage.image = UIImage(named: cars[carIndex].imageAssetName ?? "")
+        cell.nameLabel.text = cars[carIndex].name
+
+        let currencyFormatter = CurrencyFormatter()
+        cell.priceLabel.text = currencyFormatter.string(from: NSNumber(value: cars[carIndex].price))
+
         return cell
     }
 }
@@ -63,4 +71,20 @@ class CarCollectionCell: UICollectionViewCell {
     @IBOutlet weak var pictureImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+}
+
+class CurrencyFormatter: NumberFormatter {
+    override init() {
+        super.init()
+        numberStyle = .currency
+        currencyCode = "USD"
+        currencySymbol = "$"
+        decimalSeparator = "."
+        currencyGroupingSeparator = ","
+        groupingSize = 3
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 }
