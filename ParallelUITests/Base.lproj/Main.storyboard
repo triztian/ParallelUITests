@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Car List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParallelUITests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CarListViewController" customModule="ParallelUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,20 +20,60 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OF-X0-8wv">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="190" height="190"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oRw-9M-cIW">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarCollectionCell" id="oRw-9M-cIW" customClass="CarCollectionCell" customModule="ParallelUITests" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x3w-ed-xuW">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="746" translatesAutoresizingMaskIntoConstraints="NO" id="Nyu-yu-0w6" userLabel="Image">
+                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="132"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="132" id="ShV-gF-GFT"/>
+                                                        <constraint firstAttribute="width" constant="190" id="mWZ-3U-HYe"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiG-8l-lqS" userLabel="Name Label">
+                                                    <rect key="frame" x="0.0" y="140" width="190" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="$000,000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g08-Tu-kdU" userLabel="Price Label">
+                                                    <rect key="frame" x="0.0" y="169" width="190" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JiG-8l-lqS" firstAttribute="top" secondItem="Nyu-yu-0w6" secondAttribute="bottom" constant="8" id="CSm-Wt-x95"/>
+                                                <constraint firstItem="Nyu-yu-0w6" firstAttribute="leading" secondItem="x3w-ed-xuW" secondAttribute="leading" id="G8b-Nz-f2n"/>
+                                                <constraint firstAttribute="trailing" secondItem="g08-Tu-kdU" secondAttribute="trailing" id="Nro-US-ss3"/>
+                                                <constraint firstAttribute="bottom" secondItem="g08-Tu-kdU" secondAttribute="bottom" id="Qj6-7b-wGr"/>
+                                                <constraint firstItem="JiG-8l-lqS" firstAttribute="centerX" secondItem="x3w-ed-xuW" secondAttribute="centerX" id="RAy-AN-Ouo"/>
+                                                <constraint firstItem="g08-Tu-kdU" firstAttribute="top" secondItem="JiG-8l-lqS" secondAttribute="bottom" constant="8" id="Xai-yL-dmO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nyu-yu-0w6" secondAttribute="trailing" id="aap-XW-VQg"/>
+                                                <constraint firstItem="g08-Tu-kdU" firstAttribute="leading" secondItem="x3w-ed-xuW" secondAttribute="leading" id="e43-oP-PCc"/>
+                                                <constraint firstItem="JiG-8l-lqS" firstAttribute="leading" secondItem="x3w-ed-xuW" secondAttribute="leading" id="lXH-7q-L6P"/>
+                                                <constraint firstItem="g08-Tu-kdU" firstAttribute="centerX" secondItem="x3w-ed-xuW" secondAttribute="centerX" id="ndX-Om-hP2"/>
+                                                <constraint firstItem="Nyu-yu-0w6" firstAttribute="top" secondItem="x3w-ed-xuW" secondAttribute="top" id="oep-e7-MPa"/>
+                                                <constraint firstAttribute="trailing" secondItem="JiG-8l-lqS" secondAttribute="trailing" id="pmu-20-lrC"/>
+                                                <constraint firstItem="Nyu-yu-0w6" firstAttribute="width" secondItem="x3w-ed-xuW" secondAttribute="width" id="sRJ-zS-cm4"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="190" height="190"/>
                                         <connections>
+                                            <outlet property="nameLabel" destination="JiG-8l-lqS" id="KHL-UD-u20"/>
+                                            <outlet property="pictureImage" destination="Nyu-yu-0w6" id="Pwz-Rr-eeu"/>
+                                            <outlet property="priceLabel" destination="g08-Tu-kdU" id="3md-Ca-Xfc"/>
                                             <segue destination="X7W-ES-KqA" kind="showDetail" id="3dv-kF-yRG"/>
                                         </connections>
                                     </collectionViewCell>
@@ -50,10 +90,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="gpK-CO-Uvn"/>
+                    <connections>
+                        <outlet property="carCollection" destination="ro9-OO-H59" id="dYH-Kv-jVW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="139"/>
+            <point key="canvasLocation" x="-91.304347826086968" y="138.61607142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GO3-7g-i04">

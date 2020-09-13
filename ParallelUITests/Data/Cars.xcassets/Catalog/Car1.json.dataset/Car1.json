@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "name": "McLaren",
+    "description": "",
+    "image_asset_name": "Car1",
+    "price": 205450,
+    "specifications": {
+        "engine": {
+            "capacity": "3,994cc",
+            "type": "V8, 4.0L",
+            "technology": "Twin Electrically-Actuated Twin Scroll Turbochargers, Dry Sump"
+        },
+        "body": {
+            "trim": "540C",
+            "color": "red"
+        }
+    }
+}

@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BC250D8C2000689021 /* AppDelegate.swift */; };
 		51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BE250D8C2000689021 /* SceneDelegate.swift */; };
-		51A4A0C1250D8C2000689021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0C0250D8C2000689021 /* ViewController.swift */; };
+		51A4A0C1250D8C2000689021 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0C0250D8C2000689021 /* CarListViewController.swift */; };
 		51A4A0C4250D8C2000689021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0C2250D8C2000689021 /* Main.storyboard */; };
 		51A4A0C6250D8C2300689021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0C5250D8C2300689021 /* Assets.xcassets */; };
 		51A4A0C9250D8C2300689021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0C7250D8C2300689021 /* LaunchScreen.storyboard */; };
 		51A4A0D4250D8C2400689021 /* ParallelUITestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0D3250D8C2400689021 /* ParallelUITestsTests.swift */; };
 		51A4A0DF250D8C2400689021 /* ParallelUITestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */; };
+		51A4A0F0250EB10100689021 /* Cars.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0EF250EB10100689021 /* Cars.xcassets */; };
+		51A4A0F2250EB25200689021 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F1250EB25200689021 /* Car.swift */; };
+		51A4A0F4250EB2CD00689021 /* CarSpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F3250EB2CD00689021 /* CarSpecifications.swift */; };
+		51A4A0F6250EB35B00689021 /* EngineSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F5250EB35B00689021 /* EngineSpecification.swift */; };
+		51A4A0F8250EB36400689021 /* BodySpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F7250EB36400689021 /* BodySpecification.swift */; };
+		51A4A0FB250EB5C100689021 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0FA250EB5C100689021 /* CarRepository.swift */; };
+		51A4A0FD250EB6A400689021 /* LocalCarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0FC250EB6A400689021 /* LocalCarRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		51A4A0B9250D8C2000689021 /* ParallelUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallelUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4A0BC250D8C2000689021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51A4A0BE250D8C2000689021 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51A4A0C0250D8C2000689021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51A4A0C0250D8C2000689021 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
 		51A4A0C3250D8C2000689021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51A4A0C5250D8C2300689021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51A4A0C8250D8C2300689021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +57,13 @@
 		51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelUITestsUITests.swift; sourceTree = "<group>"; };
 		51A4A0E0250D8C2400689021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parallel UI Tests.xctestplan"; sourceTree = "<group>"; };
+		51A4A0EF250EB10100689021 /* Cars.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cars.xcassets; sourceTree = "<group>"; };
+		51A4A0F1250EB25200689021 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		51A4A0F3250EB2CD00689021 /* CarSpecifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSpecifications.swift; sourceTree = "<group>"; };
+		51A4A0F5250EB35B00689021 /* EngineSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineSpecification.swift; sourceTree = "<group>"; };
+		51A4A0F7250EB36400689021 /* BodySpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySpecification.swift; sourceTree = "<group>"; };
+		51A4A0FA250EB5C100689021 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
+		51A4A0FC250EB6A400689021 /* LocalCarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCarRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +94,11 @@
 		51A4A0B0250D8C2000689021 = {
 			isa = PBXGroup;
 			children = (
-				51A4A0EC250EAB0100689021 /* Test Plans */,
 				51A4A0BB250D8C2000689021 /* ParallelUITests */,
 				51A4A0D2250D8C2400689021 /* ParallelUITestsTests */,
 				51A4A0DD250D8C2400689021 /* ParallelUITestsUITests */,
+				51A4A0EC250EAB0100689021 /* Test Plans */,
+				51A4A0F9250EB49100689021 /* CICD Scripts */,
 				51A4A0BA250D8C2000689021 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,9 +116,10 @@
 		51A4A0BB250D8C2000689021 /* ParallelUITests */ = {
 			isa = PBXGroup;
 			children = (
+				51A4A0EE250EAF1200689021 /* Data */,
 				51A4A0BC250D8C2000689021 /* AppDelegate.swift */,
 				51A4A0BE250D8C2000689021 /* SceneDelegate.swift */,
-				51A4A0C0250D8C2000689021 /* ViewController.swift */,
+				51A4A0C0250D8C2000689021 /* CarListViewController.swift */,
 				51A4A0C2250D8C2000689021 /* Main.storyboard */,
 				51A4A0C5250D8C2300689021 /* Assets.xcassets */,
 				51A4A0C7250D8C2300689021 /* LaunchScreen.storyboard */,
@@ -136,6 +152,27 @@
 				51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */,
 			);
 			path = "Test Plans";
+			sourceTree = "<group>";
+		};
+		51A4A0EE250EAF1200689021 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				51A4A0FA250EB5C100689021 /* CarRepository.swift */,
+				51A4A0FC250EB6A400689021 /* LocalCarRepository.swift */,
+				51A4A0F1250EB25200689021 /* Car.swift */,
+				51A4A0F3250EB2CD00689021 /* CarSpecifications.swift */,
+				51A4A0F5250EB35B00689021 /* EngineSpecification.swift */,
+				51A4A0F7250EB36400689021 /* BodySpecification.swift */,
+				51A4A0EF250EB10100689021 /* Cars.xcassets */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		51A4A0F9250EB49100689021 /* CICD Scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CICD Scripts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +281,7 @@
 			files = (
 				51A4A0C9250D8C2300689021 /* LaunchScreen.storyboard in Resources */,
 				51A4A0C6250D8C2300689021 /* Assets.xcassets in Resources */,
+				51A4A0F0250EB10100689021 /* Cars.xcassets in Resources */,
 				51A4A0C4250D8C2000689021 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A4A0C1250D8C2000689021 /* ViewController.swift in Sources */,
+				51A4A0C1250D8C2000689021 /* CarListViewController.swift in Sources */,
+				51A4A0FD250EB6A400689021 /* LocalCarRepository.swift in Sources */,
 				51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */,
+				51A4A0F4250EB2CD00689021 /* CarSpecifications.swift in Sources */,
+				51A4A0F8250EB36400689021 /* BodySpecification.swift in Sources */,
+				51A4A0FB250EB5C100689021 /* CarRepository.swift in Sources */,
+				51A4A0F2250EB25200689021 /* Car.swift in Sources */,
 				51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */,
+				51A4A0F6250EB35B00689021 /* EngineSpecification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
