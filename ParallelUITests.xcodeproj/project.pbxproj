@@ -49,6 +49,7 @@
 		51A4A0DA250D8C2400689021 /* ParallelUITestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelUITestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelUITestsUITests.swift; sourceTree = "<group>"; };
 		51A4A0E0250D8C2400689021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parallel UI Tests.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		51A4A0B0250D8C2000689021 = {
 			isa = PBXGroup;
 			children = (
+				51A4A0EC250EAB0100689021 /* Test Plans */,
 				51A4A0BB250D8C2000689021 /* ParallelUITests */,
 				51A4A0D2250D8C2400689021 /* ParallelUITestsTests */,
 				51A4A0DD250D8C2400689021 /* ParallelUITestsUITests */,
@@ -126,6 +128,14 @@
 				51A4A0E0250D8C2400689021 /* Info.plist */,
 			);
 			path = ParallelUITestsUITests;
+			sourceTree = "<group>";
+		};
+		51A4A0EC250EAB0100689021 /* Test Plans */ = {
+			isa = PBXGroup;
+			children = (
+				51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */,
+			);
+			path = "Test Plans";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
