@@ -4,7 +4,7 @@ A sample project that showcases how to run UI tests in parallel both locally and
 
 ## App
 
-![App](Media/ParallelUITests App.gif)
+![](https://github.com/triztian/ParallelUITests/raw/master/Media/ParallelUITests%20App.gif)
 
 ## Parallel UI Execution
 
