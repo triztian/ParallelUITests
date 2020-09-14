@@ -9,21 +9,62 @@
 import XCTest
 
 class ContactSellerTests: XCTestCase {
+    lazy var app = XCUIApplication()
+
     func test_type_name() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
+
+        let cell = app.descendants(matching: .cell).element(boundBy: 0)
+        cell.tap()
+
+        let contactSellerButton = app.descendants(matching: .button)["Contact Seller"]
+        waitForElem(contactSellerButton, timeout: 5)
+        contactSellerButton.tap()
+
+        let nameTextField = app.descendants(matching: .textField)["ContactSeller.NameTextField"]
+        waitForElem(nameTextField, timeout: 5)
+        nameTextField.tap()
+        nameTextField.typeText("John Doe")
+        sleep(2)
+
+        XCTAssertEqual(nameTextField.value as? String, "John Doe")
     }
     
     func test_type_email() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
+
+        let cell = app.descendants(matching: .cell).element(boundBy: 0)
+        cell.tap()
+
+        let contactSellerButton = app.descendants(matching: .button)["Contact Seller"]
+        waitForElem(contactSellerButton, timeout: 5)
+        contactSellerButton.tap()
+
+        let nameTextField = app.descendants(matching: .textField)["ContactSeller.EmailTextField"]
+        waitForElem(nameTextField, timeout: 5)
+        nameTextField.tap()
+        nameTextField.typeText("john.doe@supercars.com")
+        sleep(2)
+
+        XCTAssertEqual(nameTextField.value as? String, "john.doe@supercars.com")
     }
     
     func test_type_message() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
+
+        let cell = app.descendants(matching: .cell).element(boundBy: 0)
+        cell.tap()
+
+        let contactSellerButton = app.descendants(matching: .button)["Contact Seller"]
+        waitForElem(contactSellerButton, timeout: 5)
+        contactSellerButton.tap()
+
+        let nameTextField = app.descendants(matching: .textField)["ContactSeller.MessageTextField"]
+        waitForElem(nameTextField, timeout: 5)
+        nameTextField.tap()
+        nameTextField.typeText("Hello I want to buy the car!!")
+        sleep(2)
+
+        XCTAssertEqual(nameTextField.value as? String, "Hello I want to buy the car!!")
     }
 }

@@ -117,8 +117,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-jw-WND">
-                                <rect key="frame" x="159" y="798" width="96" height="30"/>
-                                <state key="normal" title="Contact seller"/>
+                                <rect key="frame" x="158.5" y="798" width="97" height="30"/>
+                                <state key="normal" title="Contact Seller"/>
                                 <connections>
                                     <segue destination="Gsi-nN-srb" kind="showDetail" id="3eg-GW-FFV"/>
                                 </connections>
@@ -189,6 +189,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVB-QM-8GZ" userLabel="Name TextField">
                                                 <rect key="frame" x="60" y="0.0" width="314" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ContactSeller.NameTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -211,6 +212,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-oh-SPJ" userLabel="Email TextField">
                                                 <rect key="frame" x="60" y="0.0" width="314" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ContactSeller.EmailTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -227,6 +229,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0s-Lb-PWK" userLabel="Message TextField">
                                         <rect key="frame" x="0.0" y="133.5" width="374" height="476"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ContactSeller.MessageTextField"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -237,6 +240,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-WU-4ns">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ContactSeller.CancelButton"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.72941176470000002" green="0.16862745100000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -246,6 +250,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-XV-9gK">
                                         <rect key="frame" x="148" y="0.0" width="48" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ContactSeller.SendButton"/>
                                         <state key="normal" title="Send"/>
                                         <connections>
                                             <action selector="tapSend:" destination="Gsi-nN-srb" eventType="touchUpInside" id="DM9-my-Iyu"/>
