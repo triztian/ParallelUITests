@@ -25,6 +25,7 @@ final class CarListViewController: UIViewController {
         }) { cars in
             DispatchQueue.main.async {
                 print("Cars", cars)
+                self.title = "Cars for sale (\(cars.count))"
                 self.cars = cars
                 self.carCollection.reloadData()
             }

@@ -12,7 +12,14 @@
 
   },
   "testTargets" : [
-
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ParallelUITests.xcodeproj",
+        "identifier" : "51A4A0D9250D8C2400689021",
+        "name" : "ParallelUITestsUITests"
+      }
+    }
   ],
   "version" : 1
 }

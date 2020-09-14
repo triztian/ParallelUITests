@@ -10,25 +10,17 @@ import XCTest
 @testable import ParallelUITests
 
 class ParallelUITestsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test_currency_formatter() throws {
+        let formatter = CurrencyFormatter()
+        
+        let tests = [
+            99.99: "$99.99",
+            100_000: "$100,000.00"
+        ]
+        
+        tests.forEach { input, expected in
+            let result = formatter.string(from: NSNumber(value: input))
+            XCTAssertEqual(result, expected)
         }
     }
-
 }

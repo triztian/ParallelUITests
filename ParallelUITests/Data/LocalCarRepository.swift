@@ -16,7 +16,7 @@ class LocalCarRepository: CarRepository {
     func list() -> Future<[Car], Error> {
         Future { promise in
             var cars = [Car]()
-            for i in 1...2 {
+            for i in 1...4 {
                 do {
                     if let asset = NSDataAsset(name: "Car\(i).json") {
                         cars.append(try self.decoder.decode(Car.self, from: asset.data))

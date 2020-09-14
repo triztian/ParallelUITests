@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5109589B250F06B000A9B9A4 /* ContactSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */; };
+		5109589D250F0FB500A9B9A4 /* UserFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5109589C250F0FB500A9B9A4 /* UserFlowTests.swift */; };
+		510958A1250F15C200A9B9A4 /* CarListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510958A0250F15C200A9B9A4 /* CarListTests.swift */; };
 		517AD42D250ECA6F00C8860F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */; };
 		51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BC250D8C2000689021 /* AppDelegate.swift */; };
 		51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BE250D8C2000689021 /* SceneDelegate.swift */; };
@@ -16,7 +18,7 @@
 		51A4A0C6250D8C2300689021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0C5250D8C2300689021 /* Assets.xcassets */; };
 		51A4A0C9250D8C2300689021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0C7250D8C2300689021 /* LaunchScreen.storyboard */; };
 		51A4A0D4250D8C2400689021 /* ParallelUITestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0D3250D8C2400689021 /* ParallelUITestsTests.swift */; };
-		51A4A0DF250D8C2400689021 /* ParallelUITestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */; };
+		51A4A0DF250D8C2400689021 /* ContactSellerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0DE250D8C2400689021 /* ContactSellerTests.swift */; };
 		51A4A0F0250EB10100689021 /* Cars.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A4A0EF250EB10100689021 /* Cars.xcassets */; };
 		51A4A0F2250EB25200689021 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F1250EB25200689021 /* Car.swift */; };
 		51A4A0F4250EB2CD00689021 /* CarSpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0F3250EB2CD00689021 /* CarSpecifications.swift */; };
@@ -45,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSellerViewController.swift; sourceTree = "<group>"; };
+		5109589C250F0FB500A9B9A4 /* UserFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowTests.swift; sourceTree = "<group>"; };
+		5109589E250F132500A9B9A4 /* run_uitests_parallel.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_uitests_parallel.sh; sourceTree = "<group>"; };
+		5109589F250F134000A9B9A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		510958A0250F15C200A9B9A4 /* CarListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTests.swift; sourceTree = "<group>"; };
 		517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		51A4A0B9250D8C2000689021 /* ParallelUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallelUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4A0BC250D8C2000689021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +64,7 @@
 		51A4A0D3250D8C2400689021 /* ParallelUITestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelUITestsTests.swift; sourceTree = "<group>"; };
 		51A4A0D5250D8C2400689021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A4A0DA250D8C2400689021 /* ParallelUITestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelUITestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelUITestsUITests.swift; sourceTree = "<group>"; };
+		51A4A0DE250D8C2400689021 /* ContactSellerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSellerTests.swift; sourceTree = "<group>"; };
 		51A4A0E0250D8C2400689021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parallel UI Tests.xctestplan"; sourceTree = "<group>"; };
 		51A4A0EF250EB10100689021 /* Cars.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cars.xcassets; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		51A4A0B0250D8C2000689021 = {
 			isa = PBXGroup;
 			children = (
+				5109589F250F134000A9B9A4 /* README.md */,
 				51A4A0BB250D8C2000689021 /* ParallelUITests */,
 				51A4A0D2250D8C2400689021 /* ParallelUITestsTests */,
 				51A4A0DD250D8C2400689021 /* ParallelUITestsUITests */,
@@ -146,7 +153,9 @@
 		51A4A0DD250D8C2400689021 /* ParallelUITestsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				51A4A0DE250D8C2400689021 /* ParallelUITestsUITests.swift */,
+				5109589C250F0FB500A9B9A4 /* UserFlowTests.swift */,
+				510958A0250F15C200A9B9A4 /* CarListTests.swift */,
+				51A4A0DE250D8C2400689021 /* ContactSellerTests.swift */,
 				51A4A0E0250D8C2400689021 /* Info.plist */,
 			);
 			path = ParallelUITestsUITests;
@@ -177,6 +186,7 @@
 		51A4A0F9250EB49100689021 /* CICD Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				5109589E250F132500A9B9A4 /* run_uitests_parallel.sh */,
 			);
 			path = "CICD Scripts";
 			sourceTree = "<group>";
@@ -339,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A4A0DF250D8C2400689021 /* ParallelUITestsUITests.swift in Sources */,
+				5109589D250F0FB500A9B9A4 /* UserFlowTests.swift in Sources */,
+				51A4A0DF250D8C2400689021 /* ContactSellerTests.swift in Sources */,
+				510958A1250F15C200A9B9A4 /* CarListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,18 @@
+{
+    "id": 4,
+    "name": "Ferrari",
+    "description": "",
+    "image_asset_name": "Car4",
+    "price": 323745,
+    "specifications": {
+        "engine": {
+            "type": "V12, 6.3 L/382",
+            "capacity": "3,994cc",
+            "technology": "8-speed shiftable automatic"
+        },
+        "body": {
+            "trim": "F12berlinetta",
+            "color": "Red"
+        }
+    }
+}

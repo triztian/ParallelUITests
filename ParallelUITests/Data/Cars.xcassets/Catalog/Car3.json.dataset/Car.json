@@ -1,0 +1,18 @@
+{
+    "id": 3,
+    "name": "Maserati",
+    "description": "",
+    "image_asset_name": "Car3",
+    "price": 72190,
+    "specifications": {
+        "engine": {
+            "type": "V6",
+            "capacity": "3,994cc",
+            "technology": "8-speed shiftable automatic"
+        },
+        "body": {
+            "trim": "Ghibli",
+            "color": "Black"
+        }
+    }
+}

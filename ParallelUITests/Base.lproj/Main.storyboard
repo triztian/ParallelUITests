@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ro9-OO-H59">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="740"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OF-X0-8wv">
                                     <size key="itemSize" width="190" height="190"/>
@@ -85,7 +85,7 @@
                             <constraint firstItem="ro9-OO-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Ce-9R-ilz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ro9-OO-H59" secondAttribute="trailing" id="FP5-io-ztc"/>
                             <constraint firstItem="ro9-OO-H59" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p1c-Iv-d9H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ro9-OO-H59" secondAttribute="bottom" id="ydW-20-gdz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ro9-OO-H59" secondAttribute="bottom" constant="34" id="ydW-20-gdz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -113,11 +113,11 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-IM-ViU">
-                                <rect key="frame" x="20" y="332" width="374" height="484"/>
+                                <rect key="frame" x="20" y="332" width="374" height="450"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-jw-WND">
-                                <rect key="frame" x="159" y="832" width="96" height="30"/>
+                                <rect key="frame" x="159" y="798" width="96" height="30"/>
                                 <state key="normal" title="Contact seller"/>
                                 <connections>
                                     <segue destination="Gsi-nN-srb" kind="showDetail" id="3eg-GW-FFV"/>
@@ -131,7 +131,7 @@
                             <constraint firstItem="VYb-jw-WND" firstAttribute="top" secondItem="Eg3-IM-ViU" secondAttribute="bottom" constant="16" id="R70-Ss-YJE"/>
                             <constraint firstItem="qEq-Po-bTN" firstAttribute="top" secondItem="NsA-E9-wfb" secondAttribute="top" id="Rjd-ia-TeY"/>
                             <constraint firstItem="NsA-E9-wfb" firstAttribute="trailing" secondItem="Eg3-IM-ViU" secondAttribute="trailing" constant="20" id="Tke-IA-RGg"/>
-                            <constraint firstAttribute="bottom" secondItem="VYb-jw-WND" secondAttribute="bottom" constant="34" id="ac8-qz-R73"/>
+                            <constraint firstItem="NsA-E9-wfb" firstAttribute="bottom" secondItem="VYb-jw-WND" secondAttribute="bottom" constant="34" id="ac8-qz-R73"/>
                             <constraint firstItem="NsA-E9-wfb" firstAttribute="trailing" secondItem="qEq-Po-bTN" secondAttribute="trailing" id="dem-hg-ONQ"/>
                             <constraint firstItem="Eg3-IM-ViU" firstAttribute="top" secondItem="qEq-Po-bTN" secondAttribute="bottom" constant="24" id="qeM-ac-oGa"/>
                             <constraint firstItem="qEq-Po-bTN" firstAttribute="leading" secondItem="NsA-E9-wfb" secondAttribute="leading" id="vRE-uo-iqc"/>
@@ -162,7 +162,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Rb-Hh-siE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-813" y="139"/>
+            <point key="canvasLocation" x="-949" y="139"/>
         </scene>
         <!--Contact Seller View Controller-->
         <scene sceneID="kCj-Q2-Eua">
@@ -173,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-gz-eC9">
-                                <rect key="frame" x="20" y="86.5" width="374" height="643.5"/>
+                                <rect key="frame" x="20" y="86.5" width="374" height="609.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="smq-Oq-l5U" userLabel="Name Views">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -226,14 +226,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0s-Lb-PWK" userLabel="Message TextField">
-                                        <rect key="frame" x="0.0" y="133.5" width="374" height="510"/>
+                                        <rect key="frame" x="0.0" y="133.5" width="374" height="476"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="kFy-k3-WWG" userLabel="Button Views">
-                                <rect key="frame" x="109" y="778" width="196" height="30"/>
+                                <rect key="frame" x="109" y="744" width="196" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXv-WU-4ns">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
@@ -265,7 +265,7 @@
                             <constraint firstItem="kFy-k3-WWG" firstAttribute="top" secondItem="7SH-gz-eC9" secondAttribute="bottom" constant="48" id="12K-5i-3sU"/>
                             <constraint firstItem="kFy-k3-WWG" firstAttribute="centerX" secondItem="8j7-64-gSm" secondAttribute="centerX" id="781-cX-RVz"/>
                             <constraint firstItem="hqH-AG-Mlr" firstAttribute="top" secondItem="Ep1-SV-vVZ" secondAttribute="top" constant="24" id="Ddh-Vf-tlk"/>
-                            <constraint firstAttribute="bottom" secondItem="kFy-k3-WWG" secondAttribute="bottom" constant="34" id="FEi-vF-Pba"/>
+                            <constraint firstItem="Ep1-SV-vVZ" firstAttribute="bottom" secondItem="kFy-k3-WWG" secondAttribute="bottom" constant="34" id="FEi-vF-Pba"/>
                             <constraint firstItem="hqH-AG-Mlr" firstAttribute="centerX" secondItem="8j7-64-gSm" secondAttribute="centerX" id="M2p-RX-wzE"/>
                             <constraint firstItem="7SH-gz-eC9" firstAttribute="top" secondItem="hqH-AG-Mlr" secondAttribute="bottom" constant="36" id="iTG-IQ-ejI"/>
                             <constraint firstItem="Ep1-SV-vVZ" firstAttribute="trailing" secondItem="7SH-gz-eC9" secondAttribute="trailing" constant="20" id="wVM-5D-djy"/>
