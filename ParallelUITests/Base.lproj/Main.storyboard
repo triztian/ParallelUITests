@@ -80,7 +80,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ro9-OO-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Ce-9R-ilz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ro9-OO-H59" secondAttribute="trailing" id="FP5-io-ztc"/>
@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VYb-jw-WND" firstAttribute="centerX" secondItem="99K-w7-gDa" secondAttribute="centerX" id="0Fv-Au-A7F"/>
                             <constraint firstItem="Eg3-IM-ViU" firstAttribute="leading" secondItem="NsA-E9-wfb" secondAttribute="leading" constant="20" id="5Hk-hH-s9H"/>
@@ -265,7 +265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="kFy-k3-WWG" firstAttribute="top" secondItem="7SH-gz-eC9" secondAttribute="bottom" constant="48" id="12K-5i-3sU"/>
                             <constraint firstItem="kFy-k3-WWG" firstAttribute="centerX" secondItem="8j7-64-gSm" secondAttribute="centerX" id="781-cX-RVz"/>

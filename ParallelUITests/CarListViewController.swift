@@ -8,13 +8,16 @@
 
 import UIKit
 
+/**
+ A view controller that shows the list of cars available for sale. Tapping a cell pushes the details of the car.
+ */
 final class CarListViewController: UIViewController {
     @IBOutlet weak var carCollection: UICollectionView!
 
     lazy var carRepository = LocalCarRepository()
-    var cars = [Car]()
 
-    var selectedCar: Car?
+    /// The collection of cars loaded from the repository.
+    var cars = [Car]()
 
     override func loadView() {
         super.loadView()
@@ -44,6 +47,8 @@ final class CarListViewController: UIViewController {
     }
 }
 
+// MARK: UICollectionViewDataSource
+
 extension CarListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         cars.count
@@ -52,40 +57,23 @@ extension CarListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CarCollectionCell", for: indexPath)
             as! CarCollectionCell
+
         let carIndex = indexPath.row
-        print("Row, Section", indexPath.row, indexPath.section)
 
         cell.tag = carIndex
         cell.pictureImage.image = UIImage(named: cars[carIndex].imageAssetName ?? "")
         cell.nameLabel.text = cars[carIndex].name
 
-        let currencyFormatter = CurrencyFormatter()
-        cell.priceLabel.text = currencyFormatter.string(from: NSNumber(value: cars[carIndex].price))
+        cell.priceLabel.text = sharedCurrencyFormatter.string(from: NSNumber(value: cars[carIndex].price))
 
         return cell
     }
 }
 
-// MARK: CollectionViewCell
+// MARK: - CollectionViewCell
 
 class CarCollectionCell: UICollectionViewCell {
     @IBOutlet weak var pictureImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-}
-
-class CurrencyFormatter: NumberFormatter {
-    override init() {
-        super.init()
-        numberStyle = .currency
-        currencyCode = "USD"
-        currencySymbol = "$"
-        decimalSeparator = "."
-        currencyGroupingSeparator = ","
-        groupingSize = 3
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
 }

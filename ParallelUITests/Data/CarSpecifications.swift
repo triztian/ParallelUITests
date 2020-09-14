@@ -8,7 +8,9 @@
 
 import Foundation
 
-
+/**
+ Car specifications, such as engine and body.
+ */
 struct CarSpecifications: Decodable {
     let engine: EngineSpecification
     let body: BodySpecification

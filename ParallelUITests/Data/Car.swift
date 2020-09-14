@@ -9,6 +9,7 @@
 import Foundation
 
 /**
+ A car for sale.
  */
 struct Car: Decodable {
     let id: Int

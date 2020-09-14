@@ -9,6 +9,11 @@
 import Foundation
 import UIKit
 
+/**
+ A view controller that displays a contact box, a send and cancel button.
+ 
+ - Note: Pressing send simply shows an alert popup.
+ */
 final class ContactSellerViewController: UIViewController {
     @IBAction func tapCancel(_ sender: Any) {
         dismiss(animated: true)
@@ -16,7 +21,9 @@ final class ContactSellerViewController: UIViewController {
 
     @IBAction func tapSend(_ sender: Any) {
         DispatchQueue.main.async {
-            let messageSentAlert = UIAlertController(title: "Info", message: "Message sent!!", preferredStyle: .alert)
+            let messageSentAlert = UIAlertController(title: "Info",
+                                                     message: "Message sent!!",
+                                                     preferredStyle: .alert)
             messageSentAlert.addAction(UIAlertAction(title: "Ok", style: .default) { _ in })
             self.present(messageSentAlert, animated: true)
         }

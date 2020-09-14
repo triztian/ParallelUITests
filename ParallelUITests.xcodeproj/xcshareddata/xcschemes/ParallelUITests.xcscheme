@@ -32,6 +32,9 @@
             reference = "container:Test Plans/Parallel UI Tests.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Test Plans/ParallelUITestsTests.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

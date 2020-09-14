@@ -11,6 +11,7 @@
 		5109589D250F0FB500A9B9A4 /* CarDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5109589C250F0FB500A9B9A4 /* CarDetailTests.swift */; };
 		510958A1250F15C200A9B9A4 /* CarListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510958A0250F15C200A9B9A4 /* CarListTests.swift */; };
 		510958A3250F3E1F00A9B9A4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510958A2250F3E1F00A9B9A4 /* Helper.swift */; };
+		51631339250F72CD006FE489 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51631338250F72CD006FE489 /* CurrencyFormatter.swift */; };
 		517AD42D250ECA6F00C8860F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */; };
 		51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BC250D8C2000689021 /* AppDelegate.swift */; };
 		51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BE250D8C2000689021 /* SceneDelegate.swift */; };
@@ -53,6 +54,8 @@
 		5109589F250F134000A9B9A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		510958A0250F15C200A9B9A4 /* CarListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTests.swift; sourceTree = "<group>"; };
 		510958A2250F3E1F00A9B9A4 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		51631338250F72CD006FE489 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		5163133A250F73F0006FE489 /* ParallelUITestsTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ParallelUITestsTests.xctestplan; sourceTree = "<group>"; };
 		517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		51A4A0B9250D8C2000689021 /* ParallelUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallelUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4A0BC250D8C2000689021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,9 +135,10 @@
 				51A4A0EE250EAF1200689021 /* Data */,
 				51A4A0BC250D8C2000689021 /* AppDelegate.swift */,
 				51A4A0BE250D8C2000689021 /* SceneDelegate.swift */,
-				517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */,
 				51A4A0C0250D8C2000689021 /* CarListViewController.swift */,
+				517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */,
 				5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */,
+				51631338250F72CD006FE489 /* CurrencyFormatter.swift */,
 				51A4A0C2250D8C2000689021 /* Main.storyboard */,
 				51A4A0C5250D8C2300689021 /* Assets.xcassets */,
 				51A4A0C7250D8C2300689021 /* LaunchScreen.storyboard */,
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				51A4A0ED250EAB2000689021 /* Parallel UI Tests.xctestplan */,
+				5163133A250F73F0006FE489 /* ParallelUITestsTests.xctestplan */,
 			);
 			path = "Test Plans";
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A4A0C1250D8C2000689021 /* CarListViewController.swift in Sources */,
+				51631339250F72CD006FE489 /* CurrencyFormatter.swift in Sources */,
 				51A4A0FD250EB6A400689021 /* LocalCarRepository.swift in Sources */,
 				51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */,
 				51A4A0F4250EB2CD00689021 /* CarSpecifications.swift in Sources */,

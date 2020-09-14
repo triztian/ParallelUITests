@@ -9,18 +9,21 @@
 import Foundation
 import UIKit
 
+/**
+ A view controller that displays the details of a car.
+ */
 final class CarDetailsViewController: UIViewController {
     @IBOutlet weak var pictureImage: UIImageView!
     @IBOutlet weak var specsTable: UITableView!
 
+    /// The car that is being displayed, this should be set by the presenting controller.
     var car: Car?
-    let currencyFormatter = CurrencyFormatter()
 
     var specifications: [(String, String)] {
         guard let car = car else { return [] }
         return [
             ("Name", car.name),
-            ("Price", currencyFormatter.string(from: NSNumber(value: car.price)) ?? ""),
+            ("Price", sharedCurrencyFormatter.string(from: NSNumber(value: car.price)) ?? ""),
             ("Engine Type", car.specifications.engine.type),
             ("Engine Capacity", car.specifications.engine.capacity),
             ("Engine Technology", car.specifications.engine.technology)

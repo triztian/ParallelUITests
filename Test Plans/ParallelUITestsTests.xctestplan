@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "4A4FDEAF-40DD-4368-9228-AF1CE1486172",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:ParallelUITests.xcodeproj",
+        "identifier" : "51A4A0CE250D8C2400689021",
+        "name" : "ParallelUITestsTests"
+      }
+    }
+  ],
+  "version" : 1
+}

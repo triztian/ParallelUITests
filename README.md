@@ -6,4 +6,8 @@ A sample project that showcases how to run UI tests in parallel both locally and
 
 * Xcode 11.7
 * iOS 13+
-* jq (command line tool)
+
+## Notes
+
+If cloning don't forget to change the bundle ID!.
+

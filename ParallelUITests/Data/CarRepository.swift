@@ -9,7 +9,9 @@
 import Foundation
 import Combine
 
+/**
+ A repository of cars for sale.
+ */
 protocol CarRepository {
     func list() -> Future<[Car], Error>
-    func get(byID: Int) -> Future<Car, Error>
 }
