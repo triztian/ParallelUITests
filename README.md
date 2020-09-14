@@ -4,11 +4,11 @@ A sample project that showcases how to run UI tests in parallel both locally and
 
 ## App
 
-![]("./Media/ParallelUITests App.gif")
+![]("Media/ParallelUITests App.gif")
 
 ## Parallel UI Execution
 
-![]("./Media/ParallelUITests Xcode Run.gif")
+![]("Media/ParallelUITests Xcode Run.gif")
 
 ## Requirements
 
