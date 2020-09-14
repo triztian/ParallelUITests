@@ -9,7 +9,7 @@
 import XCTest
 
 class CarDetailTests: XCTestCase {
-    func test_select_car_and_send_message_to_seller() throws {
+    func test_first_car_details() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()

@@ -67,4 +67,21 @@ class ContactSellerTests: XCTestCase {
 
         XCTAssertEqual(nameTextField.value as? String, "Hello I want to buy the car!!")
     }
+    
+    func test_cancel_send_message() {
+        app.launch()
+
+        let cell = app.descendants(matching: .cell).element(boundBy: 0)
+        cell.tap()
+
+        let contactSellerButton = app.descendants(matching: .button)["Contact Seller"]
+        waitForElem(contactSellerButton, timeout: 5)
+        contactSellerButton.tap()
+
+        let cancelButton = app.descendants(matching: .button)["ContactSeller.CancelButton"]
+        waitForElem(cancelButton, timeout: 5)
+        cancelButton.tap()
+        
+        waitForElem(contactSellerButton, timeout: 5)
+    }
 }
