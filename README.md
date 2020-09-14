@@ -8,7 +8,7 @@ A sample project that showcases how to run UI tests in parallel both locally and
 
 ## Parallel UI Execution
 
-![Xcode](Media/ParallelUITests Xcode Run.gif)
+![](https://github.com/triztian/ParallelUITests/raw/master/Media/ParallelUITests%20Xcode%20Run.gif)
 
 ## Requirements
 
