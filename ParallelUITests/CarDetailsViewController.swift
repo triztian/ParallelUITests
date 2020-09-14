@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CarDetailsViewController: UIViewController {
+final class CarDetailsViewController: UIViewController {
     @IBOutlet weak var pictureImage: UIImageView!
     @IBOutlet weak var specsTable: UITableView!
 

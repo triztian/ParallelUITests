@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CarListViewController: UIViewController {
+final class CarListViewController: UIViewController {
     @IBOutlet weak var carCollection: UICollectionView!
-    
+
     lazy var carRepository = LocalCarRepository()
     var cars = [Car]()
-    
+
     var selectedCar: Car?
 
     override func loadView() {

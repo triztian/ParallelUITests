@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="-813" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Seller View Controller-->
         <scene sceneID="kCj-Q2-Eua">
             <objects>
-                <viewController id="Gsi-nN-srb" sceneMemberID="viewController">
+                <viewController id="Gsi-nN-srb" customClass="ContactSellerViewController" customModule="ParallelUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8j7-64-gSm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,10 +240,16 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.72941176470000002" green="0.16862745100000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapCancel:" destination="Gsi-nN-srb" eventType="touchUpInside" id="7uz-W4-JXy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LU1-XV-9gK">
                                         <rect key="frame" x="148" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="tapSend:" destination="Gsi-nN-srb" eventType="touchUpInside" id="DM9-my-Iyu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

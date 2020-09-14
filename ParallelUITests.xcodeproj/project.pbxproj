@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5109589B250F06B000A9B9A4 /* ContactSellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */; };
 		517AD42D250ECA6F00C8860F /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */; };
 		51A4A0BD250D8C2000689021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BC250D8C2000689021 /* AppDelegate.swift */; };
 		51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4A0BE250D8C2000689021 /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSellerViewController.swift; sourceTree = "<group>"; };
 		517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
 		51A4A0B9250D8C2000689021 /* ParallelUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallelUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4A0BC250D8C2000689021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				51A4A0BE250D8C2000689021 /* SceneDelegate.swift */,
 				517AD42C250ECA6F00C8860F /* CarDetailsViewController.swift */,
 				51A4A0C0250D8C2000689021 /* CarListViewController.swift */,
+				5109589A250F06B000A9B9A4 /* ContactSellerViewController.swift */,
 				51A4A0C2250D8C2000689021 /* Main.storyboard */,
 				51A4A0C5250D8C2300689021 /* Assets.xcassets */,
 				51A4A0C7250D8C2300689021 /* LaunchScreen.storyboard */,
@@ -318,6 +321,7 @@
 				51A4A0FB250EB5C100689021 /* CarRepository.swift in Sources */,
 				517AD42D250ECA6F00C8860F /* CarDetailsViewController.swift in Sources */,
 				51A4A0F2250EB25200689021 /* Car.swift in Sources */,
+				5109589B250F06B000A9B9A4 /* ContactSellerViewController.swift in Sources */,
 				51A4A0BF250D8C2000689021 /* SceneDelegate.swift in Sources */,
 				51A4A0F6250EB35B00689021 /* EngineSpecification.swift in Sources */,
 			);
